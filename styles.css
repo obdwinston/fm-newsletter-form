@@ -57,11 +57,13 @@ body {
 
 .card-title {
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 .card-title,
 .card-subtitle,
-.card-list {
+.card-list,
+.card-icon {
   margin-bottom: 30px;
 }
 
@@ -84,7 +86,8 @@ body {
   color: var(--dark-slate-grey);
 }
 
-.card-form * {
+.card-form *,
+.card-success button {
   display: block;
   width: 100%;
 }
@@ -102,7 +105,8 @@ body {
   border-radius: 10px;
 }
 
-.card-form button {
+.card-form button,
+.card-success button {
   padding: 15px 20px;
   background: var(--dark-slate-grey);
   color: var(--white);
@@ -116,4 +120,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+.card-success {
+  display: none;
 }
